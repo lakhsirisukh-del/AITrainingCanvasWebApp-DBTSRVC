@@ -197,23 +197,29 @@
                 </div>
             </div>
 
-            <!-- Canvas Visualization Container -->
-            <div class="glass-panel rounded-2xl p-6 relative overflow-hidden canvas-grid border border-slate-800">
-                <div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-6 border-b border-slate-800/80 gap-4">
-                    <div>
-                        <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-500/20 text-indigo-300 rounded-md uppercase tracking-wider">
-                            <i class="fa-solid fa-diagram-project mr-1"></i> Interactive Visual Canvas
-                        </span>
-                        <h2 class="text-2xl font-bold text-white mt-1">ผืนผ้าใบสรุปโครงสร้างโครงการและหลักสูตร</h2>
-                        <p class="text-slate-400 text-sm">คลิกที่การ์ดเพื่อดูรายละเอียดกลุ่มเป้าหมายและเนื้อหาการอบรม</p>
-                    </div>
+          <!-- Canvas Visualization Container -->
+<div class="glass-panel rounded-2xl p-6 relative overflow-hidden canvas-grid border border-slate-800">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-6 border-b border-slate-800/80 gap-4">
+        
+        <!-- เพิ่มรูปภาพคู่กับข้อความส่วนหัว -->
+        <div class="flex items-start gap-4">
+            <img src="https://i.ibb.co/x8X95js1/Gemini-Generated-Image-dzpps3dzpps3dzpp-2.png" alt="Canvas Banner" class="w-16 h-16 rounded-xl object-cover border border-slate-700/50 shadow-md shrink-0">
+            
+            <div>
+                <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-500/20 text-indigo-300 rounded-md uppercase tracking-wider">
+                    <i class="fa-solid fa-diagram-project mr-1"></i> Interactive Visual Canvas
+                </span>
+                <h2 class="text-2xl font-bold text-white mt-1">ผืนผ้าใบสรุปโครงสร้างโครงการและหลักสูตร</h2>
+                <p class="text-slate-400 text-sm">คลิกที่การ์ดเพื่อดูรายละเอียดกลุ่มเป้าหมายและเนื้อหาการอบรม</p>
+            </div>
+        </div>
 
-                    <div class="flex items-center gap-2">
-                        <button onclick="filterCanvas('all')" class="canvas-filter-btn active px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-600 text-white">แสดงทั้งหมด</button>
-                        <button onclick="filterCanvas('day1')" class="canvas-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300">เสาร์ 29 ส.ค.</button>
-                        <button onclick="filterCanvas('day2')" class="canvas-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300">อาทิตย์ 30 ส.ค.</button>
-                    </div>
-                </div>
+        <div class="flex items-center gap-2">
+            <button onclick="filterCanvas('all')" class="canvas-filter-btn active px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-600 text-white">แสดงทั้งหมด</button>
+            <button onclick="filterCanvas('day1')" class="canvas-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300">เสาร์ 29 ส.ค.</button>
+            <button onclick="filterCanvas('day2')" class="canvas-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300">อาทิตย์ 30 ส.ค.</button>
+        </div>
+    </div>
 
                 <!-- Node Layout Diagram -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
